@@ -31,9 +31,9 @@ For customers using release 6, the Agent can be configured to obfuscate specific
 
 ## HIPAA-enabled Customers
 
-Datadog will sign a Business Associate Agreement (BAA) with customers that transmit protected health information (ePHI) via Datadog’s Log Management Service.
+Datadog will sign a Business Associate Agreement (BAA) with customers that transmit electronic protected health information (ePHI) via Datadog’s Log Management Service, which is the only Datadog product that is currently HIPAA-eligible.
 
-These features are not available to customers who have signed Datadog's BAA:
+These Log Management features are not currently available to customers who have signed Datadog's BAA:
 
 * Users cannot request support via chat
 * Group-by dimensions are limited to host tags, source, service, and status for [Log-based Metrics][6]

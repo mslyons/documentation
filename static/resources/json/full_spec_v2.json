@@ -4852,9 +4852,16 @@
                 ]
               }
             },
+            "required": [
+              "id",
+              "type"
+            ],
             "type": "object"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "RelationshipToOrganizationData": {
@@ -4877,6 +4884,10 @@
             ]
           }
         },
+        "required": [
+          "id",
+          "type"
+        ],
         "type": "object"
       },
       "RelationshipToOrganizations": {
@@ -4904,11 +4915,18 @@
                   ]
                 }
               },
+              "required": [
+                "id",
+                "type"
+              ],
               "type": "object"
             },
             "type": "array"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "RelationshipToPermission": {
@@ -5090,14 +5108,27 @@
               },
               "type": {
                 "default": "users",
-                "description": "Users type.",
-                "readOnly": true,
-                "type": "string"
+                "description": "Users resource type.",
+                "enum": [
+                  "users"
+                ],
+                "example": "users",
+                "type": "string",
+                "x-enum-varnames": [
+                  "USERS"
+                ]
               }
             },
+            "required": [
+              "id",
+              "type"
+            ],
             "type": "object"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "RelationshipToUserData": {
@@ -5109,11 +5140,21 @@
           },
           "type": {
             "default": "users",
-            "description": "Users type.",
-            "readOnly": true,
-            "type": "string"
+            "description": "Users resource type.",
+            "enum": [
+              "users"
+            ],
+            "example": "users",
+            "type": "string",
+            "x-enum-varnames": [
+              "USERS"
+            ]
           }
         },
+        "required": [
+          "id",
+          "type"
+        ],
         "type": "object"
       },
       "RelationshipToUsers": {
@@ -5130,16 +5171,29 @@
                 },
                 "type": {
                   "default": "users",
-                  "description": "Users type.",
-                  "readOnly": true,
-                  "type": "string"
+                  "description": "Users resource type.",
+                  "enum": [
+                    "users"
+                  ],
+                  "example": "users",
+                  "type": "string",
+                  "x-enum-varnames": [
+                    "USERS"
+                  ]
                 }
               },
+              "required": [
+                "id",
+                "type"
+              ],
               "type": "object"
             },
             "type": "array"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "ResponseMetaAttributes": {
@@ -6083,16 +6137,29 @@
                         },
                         "type": {
                           "default": "users",
-                          "description": "Users type.",
-                          "readOnly": true,
-                          "type": "string"
+                          "description": "Users resource type.",
+                          "enum": [
+                            "users"
+                          ],
+                          "example": "users",
+                          "type": "string",
+                          "x-enum-varnames": [
+                            "USERS"
+                          ]
                         }
                       },
+                      "required": [
+                        "id",
+                        "type"
+                      ],
                       "type": "object"
                     },
                     "type": "array"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             },
@@ -6111,6 +6178,9 @@
             ]
           }
         },
+        "required": [
+          "attributes"
+        ],
         "type": "object"
       },
       "RoleCreateRequest": {
@@ -6190,16 +6260,29 @@
                             },
                             "type": {
                               "default": "users",
-                              "description": "Users type.",
-                              "readOnly": true,
-                              "type": "string"
+                              "description": "Users resource type.",
+                              "enum": [
+                                "users"
+                              ],
+                              "example": "users",
+                              "type": "string",
+                              "x-enum-varnames": [
+                                "USERS"
+                              ]
                             }
                           },
+                          "required": [
+                            "id",
+                            "type"
+                          ],
                           "type": "object"
                         },
                         "type": "array"
                       }
                     },
+                    "required": [
+                      "data"
+                    ],
                     "type": "object"
                   }
                 },
@@ -6218,9 +6301,15 @@
                 ]
               }
             },
+            "required": [
+              "attributes"
+            ],
             "type": "object"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "RoleCreateResponse": {
@@ -6363,16 +6452,29 @@
                     },
                     "type": {
                       "default": "users",
-                      "description": "Users type.",
-                      "readOnly": true,
-                      "type": "string"
+                      "description": "Users resource type.",
+                      "enum": [
+                        "users"
+                      ],
+                      "example": "users",
+                      "type": "string",
+                      "x-enum-varnames": [
+                        "USERS"
+                      ]
                     }
                   },
+                  "required": [
+                    "id",
+                    "type"
+                  ],
                   "type": "object"
                 },
                 "type": "array"
               }
             },
+            "required": [
+              "data"
+            ],
             "type": "object"
           }
         },
@@ -6577,6 +6679,11 @@
             ]
           }
         },
+        "required": [
+          "attributes",
+          "type",
+          "id"
+        ],
         "type": "object"
       },
       "RoleUpdateRequest": {
@@ -6624,9 +6731,17 @@
                 ]
               }
             },
+            "required": [
+              "attributes",
+              "type",
+              "id"
+            ],
             "type": "object"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "RoleUpdateResponse": {
@@ -8585,9 +8700,16 @@
                         ]
                       }
                     },
+                    "required": [
+                      "id",
+                      "type"
+                    ],
                     "type": "object"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               },
               "other_orgs": {
@@ -8615,11 +8737,18 @@
                           ]
                         }
                       },
+                      "required": [
+                        "id",
+                        "type"
+                      ],
                       "type": "object"
                     },
                     "type": "array"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               },
               "other_users": {
@@ -8636,16 +8765,29 @@
                         },
                         "type": {
                           "default": "users",
-                          "description": "Users type.",
-                          "readOnly": true,
-                          "type": "string"
+                          "description": "Users resource type.",
+                          "enum": [
+                            "users"
+                          ],
+                          "example": "users",
+                          "type": "string",
+                          "x-enum-varnames": [
+                            "USERS"
+                          ]
                         }
                       },
+                      "required": [
+                        "id",
+                        "type"
+                      ],
                       "type": "object"
                     },
                     "type": "array"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               },
               "roles": {
@@ -8690,6 +8832,7 @@
             "enum": [
               "users"
             ],
+            "example": "users",
             "type": "string",
             "x-enum-varnames": [
               "USERS"
@@ -8825,12 +8968,17 @@
             "enum": [
               "users"
             ],
+            "example": "users",
             "type": "string",
             "x-enum-varnames": [
               "USERS"
             ]
           }
         },
+        "required": [
+          "attributes",
+          "type"
+        ],
         "type": "object"
       },
       "UserCreateRequest": {
@@ -8902,15 +9050,23 @@
                 "enum": [
                   "users"
                 ],
+                "example": "users",
                 "type": "string",
                 "x-enum-varnames": [
                   "USERS"
                 ]
               }
             },
+            "required": [
+              "attributes",
+              "type"
+            ],
             "type": "object"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "UserInvitationData": {
@@ -8931,17 +9087,33 @@
                       },
                       "type": {
                         "default": "users",
-                        "description": "Users type.",
-                        "readOnly": true,
-                        "type": "string"
+                        "description": "Users resource type.",
+                        "enum": [
+                          "users"
+                        ],
+                        "example": "users",
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "USERS"
+                        ]
                       }
                     },
+                    "required": [
+                      "id",
+                      "type"
+                    ],
                     "type": "object"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             },
+            "required": [
+              "user"
+            ],
             "type": "object"
           },
           "type": {
@@ -8950,12 +9122,17 @@
             "enum": [
               "user_invitations"
             ],
+            "example": "user_invitations",
             "type": "string",
             "x-enum-varnames": [
               "USER_INVITATIONS"
             ]
           }
         },
+        "required": [
+          "type",
+          "relationships"
+        ],
         "type": "object"
       },
       "UserInvitationDataAttributes": {
@@ -8997,17 +9174,33 @@
                   },
                   "type": {
                     "default": "users",
-                    "description": "Users type.",
-                    "readOnly": true,
-                    "type": "string"
+                    "description": "Users resource type.",
+                    "enum": [
+                      "users"
+                    ],
+                    "example": "users",
+                    "type": "string",
+                    "x-enum-varnames": [
+                      "USERS"
+                    ]
                   }
                 },
+                "required": [
+                  "id",
+                  "type"
+                ],
                 "type": "object"
               }
             },
+            "required": [
+              "data"
+            ],
             "type": "object"
           }
         },
+        "required": [
+          "user"
+        ],
         "type": "object"
       },
       "UserInvitationResponse": {
@@ -9050,6 +9243,7 @@
                 "enum": [
                   "user_invitations"
                 ],
+                "example": "user_invitations",
                 "type": "string",
                 "x-enum-varnames": [
                   "USER_INVITATIONS"
@@ -9098,6 +9292,7 @@
             "enum": [
               "user_invitations"
             ],
+            "example": "user_invitations",
             "type": "string",
             "x-enum-varnames": [
               "USER_INVITATIONS"
@@ -9129,17 +9324,33 @@
                             },
                             "type": {
                               "default": "users",
-                              "description": "Users type.",
-                              "readOnly": true,
-                              "type": "string"
+                              "description": "Users resource type.",
+                              "enum": [
+                                "users"
+                              ],
+                              "example": "users",
+                              "type": "string",
+                              "x-enum-varnames": [
+                                "USERS"
+                              ]
                             }
                           },
+                          "required": [
+                            "id",
+                            "type"
+                          ],
                           "type": "object"
                         }
                       },
+                      "required": [
+                        "data"
+                      ],
                       "type": "object"
                     }
                   },
+                  "required": [
+                    "user"
+                  ],
                   "type": "object"
                 },
                 "type": {
@@ -9148,17 +9359,25 @@
                   "enum": [
                     "user_invitations"
                   ],
+                  "example": "user_invitations",
                   "type": "string",
                   "x-enum-varnames": [
                     "USER_INVITATIONS"
                   ]
                 }
               },
+              "required": [
+                "type",
+                "relationships"
+              ],
               "type": "object"
             },
             "type": "array"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "UserInvitationsResponse": {
@@ -9203,6 +9422,7 @@
                   "enum": [
                     "user_invitations"
                   ],
+                  "example": "user_invitations",
                   "type": "string",
                   "x-enum-varnames": [
                     "USER_INVITATIONS"
@@ -9222,6 +9442,7 @@
         "enum": [
           "user_invitations"
         ],
+        "example": "user_invitations",
         "type": "string",
         "x-enum-varnames": [
           "USER_INVITATIONS"
@@ -9345,9 +9566,16 @@
                             ]
                           }
                         },
+                        "required": [
+                          "id",
+                          "type"
+                        ],
                         "type": "object"
                       }
                     },
+                    "required": [
+                      "data"
+                    ],
                     "type": "object"
                   },
                   "other_orgs": {
@@ -9375,11 +9603,18 @@
                               ]
                             }
                           },
+                          "required": [
+                            "id",
+                            "type"
+                          ],
                           "type": "object"
                         },
                         "type": "array"
                       }
                     },
+                    "required": [
+                      "data"
+                    ],
                     "type": "object"
                   },
                   "other_users": {
@@ -9396,16 +9631,29 @@
                             },
                             "type": {
                               "default": "users",
-                              "description": "Users type.",
-                              "readOnly": true,
-                              "type": "string"
+                              "description": "Users resource type.",
+                              "enum": [
+                                "users"
+                              ],
+                              "example": "users",
+                              "type": "string",
+                              "x-enum-varnames": [
+                                "USERS"
+                              ]
                             }
                           },
+                          "required": [
+                            "id",
+                            "type"
+                          ],
                           "type": "object"
                         },
                         "type": "array"
                       }
                     },
+                    "required": [
+                      "data"
+                    ],
                     "type": "object"
                   },
                   "roles": {
@@ -9450,6 +9698,7 @@
                 "enum": [
                   "users"
                 ],
+                "example": "users",
                 "type": "string",
                 "x-enum-varnames": [
                   "USERS"
@@ -9935,9 +10184,16 @@
                     ]
                   }
                 },
+                "required": [
+                  "id",
+                  "type"
+                ],
                 "type": "object"
               }
             },
+            "required": [
+              "data"
+            ],
             "type": "object"
           },
           "other_orgs": {
@@ -9965,11 +10221,18 @@
                       ]
                     }
                   },
+                  "required": [
+                    "id",
+                    "type"
+                  ],
                   "type": "object"
                 },
                 "type": "array"
               }
             },
+            "required": [
+              "data"
+            ],
             "type": "object"
           },
           "other_users": {
@@ -9986,16 +10249,29 @@
                     },
                     "type": {
                       "default": "users",
-                      "description": "Users type.",
-                      "readOnly": true,
-                      "type": "string"
+                      "description": "Users resource type.",
+                      "enum": [
+                        "users"
+                      ],
+                      "example": "users",
+                      "type": "string",
+                      "x-enum-varnames": [
+                        "USERS"
+                      ]
                     }
                   },
+                  "required": [
+                    "id",
+                    "type"
+                  ],
                   "type": "object"
                 },
                 "type": "array"
               }
             },
+            "required": [
+              "data"
+            ],
             "type": "object"
           },
           "roles": {
@@ -10083,12 +10359,18 @@
             "enum": [
               "users"
             ],
+            "example": "users",
             "type": "string",
             "x-enum-varnames": [
               "USERS"
             ]
           }
         },
+        "required": [
+          "attributes",
+          "type",
+          "id"
+        ],
         "type": "object"
       },
       "UserUpdateRequest": {
@@ -10125,15 +10407,24 @@
                 "enum": [
                   "users"
                 ],
+                "example": "users",
                 "type": "string",
                 "x-enum-varnames": [
                   "USERS"
                 ]
               }
             },
+            "required": [
+              "attributes",
+              "type",
+              "id"
+            ],
             "type": "object"
           }
         },
+        "required": [
+          "data"
+        ],
         "type": "object"
       },
       "UsersResponse": {
@@ -10217,9 +10508,16 @@
                               ]
                             }
                           },
+                          "required": [
+                            "id",
+                            "type"
+                          ],
                           "type": "object"
                         }
                       },
+                      "required": [
+                        "data"
+                      ],
                       "type": "object"
                     },
                     "other_orgs": {
@@ -10247,11 +10545,18 @@
                                 ]
                               }
                             },
+                            "required": [
+                              "id",
+                              "type"
+                            ],
                             "type": "object"
                           },
                           "type": "array"
                         }
                       },
+                      "required": [
+                        "data"
+                      ],
                       "type": "object"
                     },
                     "other_users": {
@@ -10268,16 +10573,29 @@
                               },
                               "type": {
                                 "default": "users",
-                                "description": "Users type.",
-                                "readOnly": true,
-                                "type": "string"
+                                "description": "Users resource type.",
+                                "enum": [
+                                  "users"
+                                ],
+                                "example": "users",
+                                "type": "string",
+                                "x-enum-varnames": [
+                                  "USERS"
+                                ]
                               }
                             },
+                            "required": [
+                              "id",
+                              "type"
+                            ],
                             "type": "object"
                           },
                           "type": "array"
                         }
                       },
+                      "required": [
+                        "data"
+                      ],
                       "type": "object"
                     },
                     "roles": {
@@ -10322,6 +10640,7 @@
                   "enum": [
                     "users"
                   ],
+                  "example": "users",
                   "type": "string",
                   "x-enum-varnames": [
                     "USERS"
@@ -10581,6 +10900,7 @@
             "type": "object"
           }
         },
+        "readOnly": true,
         "type": "object"
       },
       "UsersType": {
@@ -10589,6 +10909,7 @@
         "enum": [
           "users"
         ],
+        "example": "users",
         "type": "string",
         "x-enum-varnames": [
           "USERS"
@@ -16911,16 +17232,29 @@
                                     },
                                     "type": {
                                       "default": "users",
-                                      "description": "Users type.",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "description": "Users resource type.",
+                                      "enum": [
+                                        "users"
+                                      ],
+                                      "example": "users",
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "USERS"
+                                      ]
                                     }
                                   },
+                                  "required": [
+                                    "id",
+                                    "type"
+                                  ],
                                   "type": "object"
                                 },
                                 "type": "array"
                               }
                             },
+                            "required": [
+                              "data"
+                            ],
                             "type": "object"
                           }
                         },
@@ -16939,9 +17273,15 @@
                         ]
                       }
                     },
+                    "required": [
+                      "attributes"
+                    ],
                     "type": "object"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             }
@@ -17418,9 +17758,17 @@
                         ]
                       }
                     },
+                    "required": [
+                      "attributes",
+                      "type",
+                      "id"
+                    ],
                     "type": "object"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             }
@@ -18230,14 +18578,27 @@
                       },
                       "type": {
                         "default": "users",
-                        "description": "Users type.",
-                        "readOnly": true,
-                        "type": "string"
+                        "description": "Users resource type.",
+                        "enum": [
+                          "users"
+                        ],
+                        "example": "users",
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "USERS"
+                        ]
                       }
                     },
+                    "required": [
+                      "id",
+                      "type"
+                    ],
                     "type": "object"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             }
@@ -18328,9 +18689,16 @@
                                         ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "other_orgs": {
@@ -18358,11 +18726,18 @@
                                           ]
                                         }
                                       },
+                                      "required": [
+                                        "id",
+                                        "type"
+                                      ],
                                       "type": "object"
                                     },
                                     "type": "array"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "other_users": {
@@ -18379,16 +18754,29 @@
                                         },
                                         "type": {
                                           "default": "users",
-                                          "description": "Users type.",
-                                          "readOnly": true,
-                                          "type": "string"
+                                          "description": "Users resource type.",
+                                          "enum": [
+                                            "users"
+                                          ],
+                                          "example": "users",
+                                          "type": "string",
+                                          "x-enum-varnames": [
+                                            "USERS"
+                                          ]
                                         }
                                       },
+                                      "required": [
+                                        "id",
+                                        "type"
+                                      ],
                                       "type": "object"
                                     },
                                     "type": "array"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "roles": {
@@ -18433,6 +18821,7 @@
                             "enum": [
                               "users"
                             ],
+                            "example": "users",
                             "type": "string",
                             "x-enum-varnames": [
                               "USERS"
@@ -18692,6 +19081,7 @@
                       "type": "object"
                     }
                   },
+                  "readOnly": true,
                   "type": "object"
                 }
               }
@@ -18920,9 +19310,16 @@
                                         ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "other_orgs": {
@@ -18950,11 +19347,18 @@
                                           ]
                                         }
                                       },
+                                      "required": [
+                                        "id",
+                                        "type"
+                                      ],
                                       "type": "object"
                                     },
                                     "type": "array"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "other_users": {
@@ -18971,16 +19375,29 @@
                                         },
                                         "type": {
                                           "default": "users",
-                                          "description": "Users type.",
-                                          "readOnly": true,
-                                          "type": "string"
+                                          "description": "Users resource type.",
+                                          "enum": [
+                                            "users"
+                                          ],
+                                          "example": "users",
+                                          "type": "string",
+                                          "x-enum-varnames": [
+                                            "USERS"
+                                          ]
                                         }
                                       },
+                                      "required": [
+                                        "id",
+                                        "type"
+                                      ],
                                       "type": "object"
                                     },
                                     "type": "array"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "roles": {
@@ -19025,6 +19442,7 @@
                             "enum": [
                               "users"
                             ],
+                            "example": "users",
                             "type": "string",
                             "x-enum-varnames": [
                               "USERS"
@@ -19284,6 +19702,7 @@
                       "type": "object"
                     }
                   },
+                  "readOnly": true,
                   "type": "object"
                 }
               }
@@ -19375,14 +19794,27 @@
                       },
                       "type": {
                         "default": "users",
-                        "description": "Users type.",
-                        "readOnly": true,
-                        "type": "string"
+                        "description": "Users resource type.",
+                        "enum": [
+                          "users"
+                        ],
+                        "example": "users",
+                        "type": "string",
+                        "x-enum-varnames": [
+                          "USERS"
+                        ]
                       }
                     },
+                    "required": [
+                      "id",
+                      "type"
+                    ],
                     "type": "object"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             }
@@ -19473,9 +19905,16 @@
                                         ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "other_orgs": {
@@ -19503,11 +19942,18 @@
                                           ]
                                         }
                                       },
+                                      "required": [
+                                        "id",
+                                        "type"
+                                      ],
                                       "type": "object"
                                     },
                                     "type": "array"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "other_users": {
@@ -19524,16 +19970,29 @@
                                         },
                                         "type": {
                                           "default": "users",
-                                          "description": "Users type.",
-                                          "readOnly": true,
-                                          "type": "string"
+                                          "description": "Users resource type.",
+                                          "enum": [
+                                            "users"
+                                          ],
+                                          "example": "users",
+                                          "type": "string",
+                                          "x-enum-varnames": [
+                                            "USERS"
+                                          ]
                                         }
                                       },
+                                      "required": [
+                                        "id",
+                                        "type"
+                                      ],
                                       "type": "object"
                                     },
                                     "type": "array"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "roles": {
@@ -19578,6 +20037,7 @@
                             "enum": [
                               "users"
                             ],
+                            "example": "users",
                             "type": "string",
                             "x-enum-varnames": [
                               "USERS"
@@ -19837,6 +20297,7 @@
                       "type": "object"
                     }
                   },
+                  "readOnly": true,
                   "type": "object"
                 }
               }
@@ -22317,17 +22778,33 @@
                                     },
                                     "type": {
                                       "default": "users",
-                                      "description": "Users type.",
-                                      "readOnly": true,
-                                      "type": "string"
+                                      "description": "Users resource type.",
+                                      "enum": [
+                                        "users"
+                                      ],
+                                      "example": "users",
+                                      "type": "string",
+                                      "x-enum-varnames": [
+                                        "USERS"
+                                      ]
                                     }
                                   },
+                                  "required": [
+                                    "id",
+                                    "type"
+                                  ],
                                   "type": "object"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             }
                           },
+                          "required": [
+                            "user"
+                          ],
                           "type": "object"
                         },
                         "type": {
@@ -22336,17 +22813,25 @@
                           "enum": [
                             "user_invitations"
                           ],
+                          "example": "user_invitations",
                           "type": "string",
                           "x-enum-varnames": [
                             "USER_INVITATIONS"
                           ]
                         }
                       },
+                      "required": [
+                        "type",
+                        "relationships"
+                      ],
                       "type": "object"
                     },
                     "type": "array"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             }
@@ -22398,6 +22883,7 @@
                             "enum": [
                               "user_invitations"
                             ],
+                            "example": "user_invitations",
                             "type": "string",
                             "x-enum-varnames": [
                               "USER_INVITATIONS"
@@ -22532,6 +23018,7 @@
                           "enum": [
                             "user_invitations"
                           ],
+                          "example": "user_invitations",
                           "type": "string",
                           "x-enum-varnames": [
                             "USER_INVITATIONS"
@@ -22765,9 +23252,16 @@
                                         ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "other_orgs": {
@@ -22795,11 +23289,18 @@
                                           ]
                                         }
                                       },
+                                      "required": [
+                                        "id",
+                                        "type"
+                                      ],
                                       "type": "object"
                                     },
                                     "type": "array"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "other_users": {
@@ -22816,16 +23317,29 @@
                                         },
                                         "type": {
                                           "default": "users",
-                                          "description": "Users type.",
-                                          "readOnly": true,
-                                          "type": "string"
+                                          "description": "Users resource type.",
+                                          "enum": [
+                                            "users"
+                                          ],
+                                          "example": "users",
+                                          "type": "string",
+                                          "x-enum-varnames": [
+                                            "USERS"
+                                          ]
                                         }
                                       },
+                                      "required": [
+                                        "id",
+                                        "type"
+                                      ],
                                       "type": "object"
                                     },
                                     "type": "array"
                                   }
                                 },
+                                "required": [
+                                  "data"
+                                ],
                                 "type": "object"
                               },
                               "roles": {
@@ -22870,6 +23384,7 @@
                             "enum": [
                               "users"
                             ],
+                            "example": "users",
                             "type": "string",
                             "x-enum-varnames": [
                               "USERS"
@@ -23129,6 +23644,7 @@
                       "type": "object"
                     }
                   },
+                  "readOnly": true,
                   "type": "object"
                 }
               }
@@ -23267,15 +23783,23 @@
                         "enum": [
                           "users"
                         ],
+                        "example": "users",
                         "type": "string",
                         "x-enum-varnames": [
                           "USERS"
                         ]
                       }
                     },
+                    "required": [
+                      "attributes",
+                      "type"
+                    ],
                     "type": "object"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             }
@@ -23364,9 +23888,16 @@
                                       ]
                                     }
                                   },
+                                  "required": [
+                                    "id",
+                                    "type"
+                                  ],
                                   "type": "object"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "other_orgs": {
@@ -23394,11 +23925,18 @@
                                         ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   },
                                   "type": "array"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "other_users": {
@@ -23415,16 +23953,29 @@
                                       },
                                       "type": {
                                         "default": "users",
-                                        "description": "Users type.",
-                                        "readOnly": true,
-                                        "type": "string"
+                                        "description": "Users resource type.",
+                                        "enum": [
+                                          "users"
+                                        ],
+                                        "example": "users",
+                                        "type": "string",
+                                        "x-enum-varnames": [
+                                          "USERS"
+                                        ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   },
                                   "type": "array"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "roles": {
@@ -23469,6 +24020,7 @@
                           "enum": [
                             "users"
                           ],
+                          "example": "users",
                           "type": "string",
                           "x-enum-varnames": [
                             "USERS"
@@ -23941,9 +24493,16 @@
                                       ]
                                     }
                                   },
+                                  "required": [
+                                    "id",
+                                    "type"
+                                  ],
                                   "type": "object"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "other_orgs": {
@@ -23971,11 +24530,18 @@
                                         ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   },
                                   "type": "array"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "other_users": {
@@ -23992,16 +24558,29 @@
                                       },
                                       "type": {
                                         "default": "users",
-                                        "description": "Users type.",
-                                        "readOnly": true,
-                                        "type": "string"
+                                        "description": "Users resource type.",
+                                        "enum": [
+                                          "users"
+                                        ],
+                                        "example": "users",
+                                        "type": "string",
+                                        "x-enum-varnames": [
+                                          "USERS"
+                                        ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   },
                                   "type": "array"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "roles": {
@@ -24046,6 +24625,7 @@
                           "enum": [
                             "users"
                           ],
+                          "example": "users",
                           "type": "string",
                           "x-enum-varnames": [
                             "USERS"
@@ -24395,15 +24975,24 @@
                         "enum": [
                           "users"
                         ],
+                        "example": "users",
                         "type": "string",
                         "x-enum-varnames": [
                           "USERS"
                         ]
                       }
                     },
+                    "required": [
+                      "attributes",
+                      "type",
+                      "id"
+                    ],
                     "type": "object"
                   }
                 },
+                "required": [
+                  "data"
+                ],
                 "type": "object"
               }
             }
@@ -24492,9 +25081,16 @@
                                       ]
                                     }
                                   },
+                                  "required": [
+                                    "id",
+                                    "type"
+                                  ],
                                   "type": "object"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "other_orgs": {
@@ -24522,11 +25118,18 @@
                                         ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   },
                                   "type": "array"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "other_users": {
@@ -24543,16 +25146,29 @@
                                       },
                                       "type": {
                                         "default": "users",
-                                        "description": "Users type.",
-                                        "readOnly": true,
-                                        "type": "string"
+                                        "description": "Users resource type.",
+                                        "enum": [
+                                          "users"
+                                        ],
+                                        "example": "users",
+                                        "type": "string",
+                                        "x-enum-varnames": [
+                                          "USERS"
+                                        ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   },
                                   "type": "array"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "roles": {
@@ -24597,6 +25213,7 @@
                           "enum": [
                             "users"
                           ],
+                          "example": "users",
                           "type": "string",
                           "x-enum-varnames": [
                             "USERS"
@@ -25044,9 +25661,16 @@
                                       ]
                                     }
                                   },
+                                  "required": [
+                                    "id",
+                                    "type"
+                                  ],
                                   "type": "object"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "other_orgs": {
@@ -25074,11 +25698,18 @@
                                         ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   },
                                   "type": "array"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "other_users": {
@@ -25095,16 +25726,29 @@
                                       },
                                       "type": {
                                         "default": "users",
-                                        "description": "Users type.",
-                                        "readOnly": true,
-                                        "type": "string"
+                                        "description": "Users resource type.",
+                                        "enum": [
+                                          "users"
+                                        ],
+                                        "example": "users",
+                                        "type": "string",
+                                        "x-enum-varnames": [
+                                          "USERS"
+                                        ]
                                       }
                                     },
+                                    "required": [
+                                      "id",
+                                      "type"
+                                    ],
                                     "type": "object"
                                   },
                                   "type": "array"
                                 }
                               },
+                              "required": [
+                                "data"
+                              ],
                               "type": "object"
                             },
                             "roles": {
@@ -25149,6 +25793,7 @@
                           "enum": [
                             "users"
                           ],
+                          "example": "users",
                           "type": "string",
                           "x-enum-varnames": [
                             "USERS"
